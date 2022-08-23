@@ -1,0 +1,20 @@
+<br/>
+
+<div class="card mb-3" style="max-width: 640px;">
+	<div class="card-header">
+    	<h4><% if @team_number > 0 %> Su equipo de superhéroes <% else %> ¿Cuántos miembros desea que tenga el equipo? <% end %></h4>
+	</div>
+  	<div class="row g-0">
+	    <% if @team_number > 0 %>
+			<%= render 'home/show_team' %>
+		<% else %>
+   			 <%= render 'home/create_team' %>
+		<% end %>
+
+
+	    
+	</div>
+  	<div class="card-footer text-muted">
+  		Crear un equipo de superhéroes
+    </div>
+</div>
